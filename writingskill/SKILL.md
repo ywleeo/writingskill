@@ -32,5 +32,3 @@ description: 写作场景的 skill。用户需要为 AI 写一条提示词/promp
 | 开脑洞 | [abilities/brainstorm.md](abilities/brainstorm.md) | 跳出第一反应，找非常规角度 |
 | 写标题 | [abilities/titles.md](abilities/titles.md) | 给留白、有态度的标题 |
 | 营销文案 | [abilities/marketing.md](abilities/marketing.md) | 一句话卖点/slogan/广告词/段子/帖子/口播/剧情短视频 |
-
-新增能力：往 `abilities/` 加一个 5 段契约的模块（何时用 / 输入 / 怎么做 / 输出 / 正反例），再在表里补一行。
