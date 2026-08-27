@@ -1,8 +1,17 @@
 # writingskill
 
-一个面向多场景的写作 skill。写作能力按「一个能力一个模块」组织，`SKILL.md` 只做主路由，每个能力的详细指导放在 `references/` 下。
+一个写作 skill。以「能力」为单元——每个写作能力一个模块，`SKILL.md` 只做索引；把写作任务交给 AI 时，按需组合这些能力。
 
-当前**已实现第一个能力：写提示词（给 AI）**。其余写作能力（写稿、起标题、立意、表达……）按同样方式陆续补充。
+## 能力目录
+
+| 能力 | 模块 |
+|---|---|
+| 写提示词（给 AI） | [writingskill/abilities/write-prompts.md](writingskill/abilities/write-prompts.md) |
+| 去 AI 味 | [writingskill/abilities/de-ai-flavor.md](writingskill/abilities/de-ai-flavor.md) |
+| 开脑洞 | [writingskill/abilities/brainstorm.md](writingskill/abilities/brainstorm.md) |
+| 写标题 | [writingskill/abilities/titles.md](writingskill/abilities/titles.md) |
+
+能力是插件、不是流程：需要哪个才调哪个，顺序由任务决定。每个能力模块带同一套契约（何时用 / 输入 / 怎么做 / 输出 / 正反例），可独立复用。
 
 ## 安装
 
@@ -21,21 +30,16 @@ mkdir -p ~/.agents/skills
 cp -r writingskill ~/.agents/skills/
 ```
 
-## 使用
-
-任务匹配到能力描述时调用对应能力模块：
-
-- **写提示词（给 AI）** → 读 `references/write-prompts.md`，按「你是谁 / 要做什么 / 素材在哪 / 别做什么 / 做成什么样」写出一条节省、信号密的提示词。
-
-`SKILL.md` 里的能力路由表标明每个能力的模块与实现状态。
-
 ## 结构
 
 ```
 writingskill/
-├── SKILL.md                    # 主干：能力路由 + 触发
-└── references/
-    └── write-prompts.md        # 能力一：写提示词（给 AI）
+├── SKILL.md                    # 主干：能力索引 + 组合原则
+└── abilities/
+    ├── write-prompts.md        # 写提示词（给 AI）
+    ├── de-ai-flavor.md         # 去 AI 味
+    ├── brainstorm.md           # 开脑洞
+    └── titles.md               # 写标题
 ```
 
 ## License

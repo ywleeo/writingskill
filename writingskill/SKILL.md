@@ -1,20 +1,21 @@
 ---
 name: writingskill
-description: 多场景写作 skill。用户需要为 AI 写一条提示词/prompt、把想法整理成可交给大语言模型的指令、或改进一条已有提示词时使用。当前只实现「写提示词」这一能力，其余写作能力按路由表陆续补充。不适用于直接代写正文、闲聊、或回答与提示词无关的问题。
+description: 写作场景的 skill。用户需要为 AI 写一条提示词/prompt、给文字去 AI 味、开脑洞找写作角度、或写标题时使用，也用于把写作任务交出去时组合这些能力。不适用于直接代写正文、闲聊、或回答与写作手法无关的问题。
 ---
 
-# Writing Skill：多场景写作
+# Writing Skill：写作能力
 
-这是一个面向多场景的写作 skill。写作能力按「一个能力一个模块」组织——`SKILL.md` 只做主路由；具体怎么写，进对应能力的模块读。
+这是一个写作 skill。每个写作能力 = 一个模块，`SKILL.md` 只做索引；具体怎么做，进对应能力的模块读。
 
-## 能力路由
+能力是**插件，不是流程**：任务需要哪个就调哪个，不需要就不套；顺序由任务决定。模块是指导，不是固定模板。
 
-| 能力 | 状态 | 模块 |
+## 能力目录
+
+| 能力 | 模块 | 说明 |
 |---|---|---|
-| 写提示词（给 AI） | ✅ 已实现 | [references/write-prompts.md](references/write-prompts.md) |
+| 写提示词（给 AI） | [abilities/write-prompts.md](abilities/write-prompts.md) | 写出短、信号密的提示词 |
+| 去 AI 味 | [abilities/de-ai-flavor.md](abilities/de-ai-flavor.md) | 把机器腔剥掉，让文字像人写的 |
+| 开脑洞 | [abilities/brainstorm.md](abilities/brainstorm.md) | 跳出第一反应，找非常规角度 |
+| 写标题 | [abilities/titles.md](abilities/titles.md) | 给留白、有态度的标题 |
 
-后续能力（写稿、起标题、立意、表达等）按同一方式往下加：细节放 `references/`，在这里补一行路由。
-
-## 用之前
-
-判断任务落在哪个能力上，读对应模块。**模块是指导，不是固定模板**——该短就短，用户要的细节才补。
+新增能力：往 `abilities/` 加一个 5 段契约的模块（何时用 / 输入 / 怎么做 / 输出 / 正反例），再在表里补一行。
