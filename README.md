@@ -1,17 +1,33 @@
 # writingskill
 
-一个写作 skill。以「能力」为单元——每个写作能力一个模块，`SKILL.md` 只做索引；把写作任务交给 AI 时，按需组合这些能力。
+一个写作 skill，核心就一句话：**唤醒 AI 的母语表达，而不是走平均概率。**
+
+## 写作观（写在 SKILL.md 开头）
+
+> **人味在于多变、创新、杂糅；客观是写作的敌人。**
+
+AI 生成默认落**平均概率**——取众数，于是天然是"均匀、端平、谁也不得罪"的壳，这就是那股 AI 味。所以这个 skill 不去"禁止 AI 味"，而是**唤起母语尾巴**：把模型参数里那些真实、具体、多变、带口音的母语，用一个"身份/场合锚点 + 一句真实母语"给它调出来。
+
+## 方法统一：唤起式（给锚，不列禁词）
+
+每个能力都用同一套手法——**给真实母语锚点，让模型往人话那条路走，而不是列一堆"别用 X / 不要 Y"。**
+
+- **身份 / 场景锚点**：一个具体的人、具体的场合（"像被甲方改了八版、蹲便利店买冰饮料的文案"）。
+- **真实母语锚**：一段来自真实平台高赞内容的母语，让模型照着那个声口写，而不是发明"平均"中文。
+- **检验尺子**：**母语者会原样说出这句话吗？** 像"重新拼出来的"就是 AI 味。
 
 ## 能力目录
 
-| 能力 | 模块 |
-|---|---|
-| 写提示词（给 AI） | [writingskill/abilities/write-prompts.md](writingskill/abilities/write-prompts.md) |
-| 去 AI 味 | [writingskill/abilities/de-ai-flavor.md](writingskill/abilities/de-ai-flavor.md) |
-| 开脑洞 | [writingskill/abilities/brainstorm.md](writingskill/abilities/brainstorm.md) |
-| 写标题 | [writingskill/abilities/titles.md](writingskill/abilities/titles.md) |
+每个能力一个模块，`SKILL.md` 只做索引与组合原则。能力是插件、不是流程：需要哪个才调哪个，顺序由任务决定。
 
-能力是插件、不是流程：需要哪个才调哪个，顺序由任务决定。每个能力模块带同一套契约（何时用 / 输入 / 怎么做 / 输出 / 正反例），可独立复用。
+| 能力 | 模块 | 说明 |
+|---|---|---|
+| 写提示词（给 AI） | [ability write-prompts](writingskill/abilities/write-prompts.md) | 给身份锚 + 一段真实母语锚，让 AI 写出人味的提示词 |
+| 去 AI 味 | [ability de-ai-flavor](writingskill/abilities/de-ai-flavor.md) | 唤起母语声口，替换"拼出来"的机器腔 |
+| 开脑洞 | [ability brainstorm](writingskill/abilities/brainstorm.md) | 换身份/场合，找非常规角度 |
+| 写标题 | [ability titles](writingskill/abilities/titles.md) | 留白、有态度的标题（三平台真实高赞锚点） |
+
+各能力内置**真实母语锚点库**，覆盖多个平台：知乎（真实回答）、豆瓣（高赞短评）、小红书（高赞评论）、微博（真实叙述）、B站（视频文案/标题）。锚点取**真实、有机、非投放**的内容。
 
 ## 安装
 
@@ -34,12 +50,12 @@ cp -r writingskill ~/.agents/skills/
 
 ```
 writingskill/
-├── SKILL.md                    # 主干：能力索引 + 组合原则
+├── SKILL.md                    # 主干：写作观 + 能力索引 + 组合原则
 └── abilities/
     ├── write-prompts.md        # 写提示词（给 AI）
-    ├── de-ai-flavor.md         # 去 AI 味
-    ├── brainstorm.md           # 开脑洞
-    └── titles.md               # 写标题
+    ├── de-ai-flavor.md         # 去 AI 味（含锚点库）
+    ├── brainstorm.md           # 开脑洞（含角度锚点库）
+    └── titles.md               # 写标题（含三平台锚点库）
 ```
 
 ## License
