@@ -26,6 +26,7 @@ AI 生成默认落**平均概率**——取众数，于是天然是"均匀、端
 | 去 AI 味 | [ability de-ai-flavor](writingskill/abilities/de-ai-flavor.md) | 唤起母语声口，替换"拼出来"的机器腔 |
 | 开脑洞 | [ability brainstorm](writingskill/abilities/brainstorm.md) | 换身份/场合，找非常规角度 |
 | 写标题 | [ability titles](writingskill/abilities/titles.md) | 留白、有态度的标题（三平台真实高赞锚点） |
+| 营销文案 | [ability marketing](writingskill/abilities/marketing.md) | 一句话卖点/slogan/广告词/段子/帖子/口播/剧情短视频（国内外真实案例锚点） |
 
 各能力内置**真实母语锚点库**，覆盖多个平台：知乎（真实回答）、豆瓣（高赞短评）、小红书（高赞评论）、微博（真实叙述）、B站（视频文案/标题）。锚点取**真实、有机、非投放**的内容。
 
@@ -55,7 +56,8 @@ writingskill/
     ├── write-prompts.md        # 写提示词（给 AI）
     ├── de-ai-flavor.md         # 去 AI 味（含锚点库）
     ├── brainstorm.md           # 开脑洞（含角度锚点库）
-    └── titles.md               # 写标题（含三平台锚点库）
+    ├── titles.md               # 写标题（含三平台锚点库）
+    └── marketing.md            # 营销文案（含国内外案例锚点库）
 ```
 
 ## License

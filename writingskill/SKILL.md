@@ -1,6 +1,6 @@
 ---
 name: writingskill
-description: 写作场景的 skill。用户需要为 AI 写一条提示词/prompt、给文字去 AI 味、开脑洞找写作角度、或写标题时使用，也用于把写作任务交出去时组合这些能力。不适用于直接代写正文、闲聊、或回答与写作手法无关的问题。
+description: 写作场景的 skill。用户需要为 AI 写一条提示词/prompt、给文字去 AI 味、开脑洞找写作角度、写标题、或写营销文案（一句话卖点/slogan/广告词/段子/帖子/口播短视频/剧情短视频）时使用，也用于把写作任务交出去时组合这些能力。不适用于直接代写正文、闲聊、或回答与写作手法无关的问题。
 ---
 
 # Writing Skill：写作能力
@@ -19,5 +19,6 @@ description: 写作场景的 skill。用户需要为 AI 写一条提示词/promp
 | 去 AI 味 | [abilities/de-ai-flavor.md](abilities/de-ai-flavor.md) | 把机器腔剥掉，让文字像人写的 |
 | 开脑洞 | [abilities/brainstorm.md](abilities/brainstorm.md) | 跳出第一反应，找非常规角度 |
 | 写标题 | [abilities/titles.md](abilities/titles.md) | 给留白、有态度的标题 |
+| 营销文案 | [abilities/marketing.md](abilities/marketing.md) | 一句话卖点/slogan/广告词/段子/帖子/口播/剧情短视频 |
 
 新增能力：往 `abilities/` 加一个 5 段契约的模块（何时用 / 输入 / 怎么做 / 输出 / 正反例），再在表里补一行。
