@@ -22,6 +22,7 @@ AI 生成默认落**平均概率**——取众数，于是天然是"均匀、端
 
 | 能力 | 模块 | 说明 |
 |---|---|---|
+| 写文章 | [ability write-article](writingskill/abilities/write-article.md) | 公众号长文/知乎专栏或回答/头条资讯体，写一篇**有立场、能读下去、想转**的正文（含分平台路由与真实声口锚点） |
 | 写提示词（给 AI） | [ability write-prompts](writingskill/abilities/write-prompts.md) | 给身份锚 + 一段真实母语锚，让 AI 写出人味的提示词 |
 | 去 AI 味 | [ability de-ai-flavor](writingskill/abilities/de-ai-flavor.md) | 唤起母语声口，替换"拼出来"的机器腔 |
 | 开脑洞 | [ability brainstorm](writingskill/abilities/brainstorm.md) | 换身份/场合，找非常规角度 |
@@ -53,6 +54,7 @@ cp -r writingskill ~/.agents/skills/
 writingskill/
 ├── SKILL.md                    # 主干：写作观 + 能力索引 + 组合原则
 └── abilities/
+    ├── write-article.md        # 写文章（公众号/知乎/头条，含分平台路由与声口锚点库）
     ├── write-prompts.md        # 写提示词（给 AI）
     ├── de-ai-flavor.md         # 去 AI 味（含锚点库）
     ├── brainstorm.md           # 开脑洞（含角度锚点库）
